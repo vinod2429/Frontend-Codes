@@ -1,0 +1,19 @@
+p {
+    border: 2px solid black;
+    height: 200px;width: 200px;
+    /* animation-name: change_clr;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; */
+
+    animation: change_clr 1s infinite;
+}
+
+@keyframes change_clr{
+    from {
+        background-color: red;
+        border-radius: 100px;
+    }
+    to {
+        background-color: yellow;
+    }
+}

@@ -1,0 +1,34 @@
+<script>
+    /*
+    1. The variables declared using var can be accessed and 
+    re-initialize anywhere in program.(var- not block scoped)
+
+    2.The variabels declared using let can be accessed only inside
+    the same block in which it is declared and can be re-initialize.
+    (let is block scoped)
+
+    3.The variables declared using const can be accessed outside the
+    block and cannot be re-initialize with new value.
+    (const is block scoped)
+    */
+    {
+        var a = 10;
+        a = 100;
+        console.log(a); //100
+    }
+    console.log(a); //100
+
+    {
+        let b = 200;
+        b =  300;
+        console.log(b);//300
+    }
+    //console.log(b); //Error
+
+    {
+        const c = 300;
+        console.log(c);
+        //c = 600; //Error
+    }
+    //console.log(c); //Error
+</script>

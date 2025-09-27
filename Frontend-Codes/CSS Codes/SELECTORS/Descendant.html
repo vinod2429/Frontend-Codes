@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>Descendant Selector Example</title>
+    <style>
+        div p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>This is a heading inside a div.</h3>
+        <p>This p inside div will be styled.</p>
+        <span>
+            <p>Para wrapped into span</p>
+        </span>
+    </div>
+
+    <p>This paragraph is outside the div and won’t be affected.</p>
+    <p>This p is also outside the div and won’t be styled.</p>
+</body>
+</html>

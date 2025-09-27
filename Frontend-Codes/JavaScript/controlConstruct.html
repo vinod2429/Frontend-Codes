@@ -1,0 +1,61 @@
+<script>
+    let age = 99
+    if(age>18 && age<65){
+        console.log('Adult')
+    }
+    else if(age<18) {
+        console.log('Child')
+    }
+    else if(age>65){
+        console.log('Senior Citizen')
+    }
+
+let day = "Monday";
+switch (day) {
+    case "Monday":
+        console.log("Start of the work week!");
+        break;
+    case "Tuesday":
+        console.log("It’s Tuesday!");
+        break;
+    default:
+        console.log("Just another day.");
+}
+
+arr = [10,20,30]
+for(let i =0 ;i<arr.length ; i++){
+    console.log(arr[i])
+}
+
+arr.forEach((ele)=>console.log(ele))
+
+for(i in arr){
+    console.log(i)
+}
+
+for(i of arr){
+    console.log(i)
+}
+
+let a = 1;
+while(a<=10){
+    console.log(a);
+    a++;
+}
+
+let b = 0;
+do {
+    console.log(b);
+    b++;
+}while(b<=10)
+
+for (let i = 1; i <= 5; i++) {
+    if (i === 3) continue;
+    console.log(i);
+}
+
+for (let i = 1; i <= 5; i++) {
+    if (i === 3) break;
+    console.log(i);
+}
+</script>

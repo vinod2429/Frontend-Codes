@@ -1,0 +1,38 @@
+<style>
+    #msg {
+        color:  red;
+        font-size: 10px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+<form onsubmit="validate()">
+    <label>Username:</label>
+    <input type="text" id="username"><span id="msg">*</span>
+    <br><br>
+    <button>Submit</button>
+</form>
+<script>
+    function validate(){
+        event.preventDefault()
+        let data = document.getElementById('username').value;
+        if(data == ''){
+            // alert('Username should not be empty')
+            let msg = document.getElementById('msg');
+            msg.textContent = 'Username should not be empty'
+        }
+        else if (data.length < 2){
+            let msg = document.getElementById('msg');
+            msg.textContent = 'Minimum Length is 2'
+        }
+        else if (data.length > 15){
+            let msg = document.getElementById('msg');
+            msg.textContent = 'Maximum Length is 15'
+        }
+        else {
+            document.getElementById('username').value = '';
+            let msg = document.getElementById('msg');
+            msg.textContent = '*'
+        }
+    }
+</script>

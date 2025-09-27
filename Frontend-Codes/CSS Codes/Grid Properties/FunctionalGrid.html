@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+       <title>Grid</title>
+       <style>
+        .grid-container {
+            background-color: lightblue;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;padding: 20px;
+        }
+        .product {
+            background-color: lightgreen;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;align-items: center;
+            flex-direction: column;
+        }
+       </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="product">
+            <h3>Product 1</h3>
+            <p>Rs.240</p>
+        </div>
+
+        <div class="product">
+            <h3>Product 2</h3>
+            <p>Rs.240</p>
+        </div>
+
+        <div class="product">
+            <h3>Product 3</h3>
+            <p>Rs.240</p>
+        </div>
+
+        <div class="product">
+            <h3>Product 4</h3>
+            <p>Rs.240</p>
+        </div>
+    </div>
+</body>
+</html>

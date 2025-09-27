@@ -1,0 +1,12 @@
+<p class="para">Para 1</p>
+<p class="para">Para 2</p>
+<p class="para">Para 3</p>
+<script>
+    let target = document.getElementsByClassName('para');
+    console.log(target.length)
+    let newele = document.createElement('p')// <p></p>
+    newele.innerHTML = `<span>Hello</span>`
+    newele.className = 'para'
+    document.body.appendChild(newele);
+    console.log(target.length)
+</script>

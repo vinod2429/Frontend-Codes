@@ -1,0 +1,25 @@
+p {
+    border: 2px solid black;
+    height: 100px; width: 100px;
+    animation: chnage_multiclr 5s infinite; 
+}
+
+@keyframes chnage_multiclr{
+    0%{
+        background-color: darkcyan;
+        border: 20px groove black;
+    }
+    25%{
+        background-color: aquamarine;
+    }
+    50%{
+        background-color: darkred;
+        border-radius: 50px;
+    }
+    75% {
+        background-color: darkkhaki;
+    }
+    100% {
+        background-color: darkmagenta;
+    }
+}

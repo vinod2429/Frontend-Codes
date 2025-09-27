@@ -1,0 +1,40 @@
+<script>
+    class Product{
+        constructor(name, price){
+            this.name = name;
+            this.price = price;
+        }
+        display(){
+            console.log(`Product Name is ${this.name} and Product Price is: ${this.price}`)
+        }
+    }
+
+    class Book extends Product{
+        constructor(name, price, author){
+            super(name, price);
+            this.author = author;
+        }
+        display(){
+            super.display();
+            console.log('Book author is:',this.author)
+        }
+    }
+
+    b1 = new Book('Python',250, 'Akash')
+    b1.display()
+
+
+    class Pen extends Product{
+        constructor(name,price, color){
+            super(name,price);
+            this.color = color;
+        }
+        display(){
+            super.display();
+            console.log('Pen color is:',this.color);
+        }
+    }
+
+    p1 = new Pen('ABC',20,'Blue')
+    p1.display()
+</script>

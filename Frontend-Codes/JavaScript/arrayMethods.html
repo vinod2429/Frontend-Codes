@@ -1,0 +1,29 @@
+<script>
+    let arr = [10,20,30]
+    //push(): Adds element at the end
+    arr.push(40) //arr = [10, 20, 30, 40]
+
+    //pop(): Removes an element from end
+    arr.pop() //arr = [10, 20, 30]
+
+    //unshift(): Adds element at 0th index
+    arr.unshift(5)//arr = [5, 10, 20, 30]
+
+    //shift(): Removes element from 0th index
+    arr.shift() //arr = [10, 20, 30]
+
+    //splice(start, deleteCount, elements to be added):
+    arr1 = [1,2,3,4,5]
+    removed_ele = arr1.splice(0,3,200,400)//[200, 400, 4, 5]
+    console.log(removed_ele)// [1,2,3]
+
+    //slice(start, end-1):
+    arr2 = [1,2,3,4,5]
+    sub_arr2 = arr2.slice(1,4) 
+    console.log('Sub array:',sub_arr2)//[2, 3, 4]
+    console.log(arr2.indexOf(5)) // 4
+    console.log(arr2.includes(600))//false
+
+    //sort(), reverse()
+
+</script>

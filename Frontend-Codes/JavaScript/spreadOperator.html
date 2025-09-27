@@ -1,0 +1,11 @@
+<script>
+    function add(...args){
+        console.log(args.reduce((acc,ele)=>acc + ele,1))
+    }
+
+    add(); //args = []
+    add(10,20); // args = [10,20]
+    add(10,20,40); //args = [10,20,40]
+</script>
+<!--Spread operator can be used with all types of functions
+and supports all array methods(filter, map, reduce, forEcah)-->

@@ -1,0 +1,47 @@
+<script>
+    arr = [11,12,13,14]
+    //WAC to display all elements of an array
+    for(var i = 0;i<4;i++){
+       console.log(`Element at index ${i} is ${arr[i]}`)
+    }
+
+    arr.forEach((element,index)=>{
+        console.log(`Element at index ${index} is ${element}`);
+    })
+
+    //WAC to display all even elements from arr2
+    arr2 = [21,22,23,24]
+    even = []
+    odd = []
+    arr2.forEach((ele)=>{
+        if(ele%2 == 0){
+            even.push(ele);
+        }
+        else {
+            odd.push(ele)
+        }
+    })
+    console.log('Even array is',even)
+    console.log('Odd array is',odd)
+
+    //WAC to find the sum of array.
+    arr3 = [1,2,3,4,5]
+    res = arr3.reduce((sum,ele)=>sum+ele,0)
+    console.log('Sum of Array is:',res)
+
+    //Product of array elements.
+    product = arr3.reduce((pro,ele)=>{return pro*ele},1)
+    console.log('Product is Array is:',product)
+
+    //WAC to filter all even elements from arr5
+    arr5 = [1,2,3,4,5]
+    console.log('Even array is:',arr5.filter((ele)=>ele%2==0))
+
+    //WAC to find square of each element of arr6
+    arr6 = [1,2,3,4,5]
+    square = arr6.map((ele)=>ele*ele)
+    console.log('Square array:',square)//[1, 4, 9, 16, 25]
+
+
+
+</script>

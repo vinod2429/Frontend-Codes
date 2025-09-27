@@ -1,0 +1,29 @@
+p {
+    border: 2px solid black;
+    height: 100px; width: 100px;
+    animation: moving_circle 5s infinite; 
+    border-radius: 50px;
+}
+
+@keyframes moving_circle{
+    0%{
+        background-color: darkcyan;
+        transform: translate(0px,0px);
+    }
+    25%{
+        background-color: aquamarine;
+        transform: translate(400px,0px);
+    }
+    50%{
+        background-color: darkred;
+        transform: translate(400px,400px);
+    }
+    75% {
+        background-color: darkkhaki;
+        transform: translate(0px,400px);
+    }
+    100% {
+        background-color: darkmagenta;
+        transform: translate(0px,0px);
+    }
+}

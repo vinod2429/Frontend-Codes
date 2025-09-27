@@ -1,0 +1,32 @@
+<script>
+    class Student{
+        constructor(name,id,paid_amt){
+            this.s_name = name;
+            this.s_id = id;
+            this.amt = paid_amt;
+        }
+        javaCourse(){
+            console.log(this.s_name,'Entrolled for Java')
+        }
+        pythonCorse(){
+            console.log(this.s_name,'Entrolled for Python')
+        }
+        getInfo(){
+            console.log('Student Name is: ',this.s_name);
+            console.log('Student ID is: ',this.s_id);
+            console.log('Paid Amount is: ',this.amt);
+        }
+    }
+
+    s1 = new Student('Akash',101,25000)
+    s1.javaCourse()
+    s2 = new Student('Pooja',102,18000)
+    s2.pythonCorse()
+    s3 = new Student('Ankit',103,15000)
+    s3.javaCourse()
+    s1.getInfo()
+    s2.getInfo()
+    s3.getInfo()
+
+
+</script>

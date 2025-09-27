@@ -1,0 +1,17 @@
+<script>
+//WAC to print sum of array
+let arr = [11,12,13,14]
+let sum = 0;
+arr.forEach((ele)=>{
+    sum = sum + ele;
+})
+console.log(sum);
+
+//reduce:
+console.log(arr.reduce((acc,ele)=>acc+ele,0))
+
+//reduce: product:
+console.log(arr.reduce((acc,ele)=>acc*ele,1))
+
+
+</script>

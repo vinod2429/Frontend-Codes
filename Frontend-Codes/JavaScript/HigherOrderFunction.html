@@ -1,0 +1,16 @@
+<script>
+    function processGreet(callback){
+        console.log(callback);
+        callback('Akash');
+    }
+    processGreet((name)=>{
+        console.log('Hello',name)
+    })
+</script>
+<!--The functions which accepts another function as an
+argument such functions are called as Higher Order 
+Functions.
+
+The functions which are passed as an argument to another
+functions , such functions are called as callback fnction
+-->

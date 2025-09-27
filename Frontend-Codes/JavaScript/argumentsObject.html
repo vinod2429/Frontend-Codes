@@ -1,0 +1,24 @@
+<script>
+    function add(){
+       let sum = 0;
+       for(let i = 0; i<arguments.length;i++){
+              sum = sum + arguments[i]
+       }
+    // let sum = arguments.reduce((acc,ele)=>acc+ele,0)
+       console.log("Sum is: ",sum);
+    }
+    add(); 
+    add(10);
+    add(10,20,30,40);
+
+    
+    let sub = ()=>{
+        if(arguments.length == 2){
+            console.log(arguments[0]-arguments[1])
+        }
+        else console.log('Invalid arguments..!')
+    }
+</script>
+<!--
+1.arguments object wont support filter, map, reduce, forEach()
+2.arguments object wont support arrow function.-->

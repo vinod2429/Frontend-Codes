@@ -1,0 +1,17 @@
+<script>
+    let p1 = new Promise((resolve, reject)=>{
+        setTimeout(()=>{
+            console.log('Promise Resolved');
+            resolve();
+        },8000)
+    })
+
+    async function task(){
+        console.log('In1');
+        // p1.then(()=>{console.log('Promise Resolved')})
+        await p1;
+        console.log('In3 should wait for promise to resolve');
+    }
+    task();
+    console.log('Other task not depend on Promise')
+</script>
